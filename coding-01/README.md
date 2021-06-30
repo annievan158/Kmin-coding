@@ -1,1 +1,0 @@
-# Kmin-coding
