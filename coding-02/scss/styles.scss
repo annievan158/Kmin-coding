@@ -1,0 +1,12 @@
+@import 'mixin'; 
+@import 'variable';
+@import 'layout';
+@import 'media';
+
+body{
+    margin: auto;
+    max-width: 100%;
+}
+*{
+    box-sizing: border-box;
+}

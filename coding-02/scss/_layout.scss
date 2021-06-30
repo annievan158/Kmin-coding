@@ -1,0 +1,295 @@
+@import 'mixin';
+@import 'variable';
+.page-container{
+    max-width: 100%;
+}
+
+.body-2{
+    background-color: $gray-bgcolor;
+    // height: 204px;
+    // @include flex-3fix;
+}
+.body-3{
+    // height: 760px;
+    @include flex-3fix;
+}
+.body-4{
+    background-color: $gray-bgcolor;
+    // height: 264px;
+    @include flex-3fix;
+}
+.body-5{
+    background-color: $gray-bgcolor;
+    // height: 659px;
+}
+.body-6{
+    background-color: $gray-bgcolor;
+
+}
+.body-7{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    max-width: 100%;
+    position: relative;
+    background-color: #FAFAFA;
+}
+.body-group1{
+    display: flex;
+    position: relative;
+}
+.group-banner{
+    position: absolute;
+    top: 0%;
+    @include flex-3fix;
+    flex-direction: column;
+}
+.group-img{
+    height: 50%;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+}
+.baner-map{
+    object-fit: cover;
+    width: 100%;
+}
+.group-1{
+    padding: 100px 0px;
+}
+
+.header-btn-color{
+    @include text-font;
+    text-decoration: none;
+}
+.navbar-margin{
+    margin: 0px 195px;
+    background: none;
+}
+.container-left{
+    @include flex-3fix;
+}
+.navbar-group{
+    @include flex-3fix;
+}
+
+.navbar-group-brand{
+    padding: 10px;
+}
+.container-right{
+    @include flex-3fix;
+}
+
+.background{
+    background-color: $gray-bgcolor;
+}
+.body-group-2{
+    height: 997px;
+    background-repeat: no-repeat;
+    background-color: $gray-bgcolor;
+    @include flex-3fix;
+}
+.icon-font{
+    color: white;
+    font-size: 20px;
+}
+.group-text{
+    @include flex-3fix;
+    flex-direction: column;
+    margin: 10% 0%;
+}
+.body-banner{
+    height: 793px;
+    @include flex-3fix;
+    flex-direction: column;
+}
+.text-heading{
+    width: 600px;
+    height: 160px;
+    line-height: 80px;
+    text-align: center;
+    @include text-font(58px,800,$white-color);
+}
+.text-tagline{
+    width: 539px;
+    height: 60px;
+    line-height: 30px;
+    text-align: center;
+    @include text-font(20px, 500, $white-color);
+    margin: 40px 0px;
+}
+.btn-add{
+    width: 185px;
+    height: 52px;
+    border-radius: 37px;
+    text-align: center;
+    @include text-font(14px, bold, $white-color);
+}
+
+.body-2{
+    @include flex-3fix;
+}
+
+.card-edit{
+    background-color: $white-bgcolor;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+    &:last-child(){
+        background-color: $blue-color;
+    }
+}
+
+.card-heading{
+    @include text-font(24px, bold,$bold-text-color);
+}
+.card-text-edit{
+    @include text-font(14px, 500, $light-text-color);
+    // width: 213px;
+    // height: 40px;
+}
+
+.text-heading-2{
+    @include text-font(40px, 700, $bold-text-color);
+    text-align: center;
+    line-height: 57px;
+    width: 445px;
+    // height: 114px;
+}
+
+.body-3,.group-1{
+    @include flex-3fix;
+    flex-direction: column;
+}
+.body3-text-tagline{
+    @include text-font(14px, 500, $light-text-color);
+    text-align: center;
+    line-height: 20px;
+    width: 470px;
+    height: 40px;
+
+}
+h2.card-title{
+    @include text-font(40px, 700, $blue-color);
+    letter-spacing: 0.2px;
+    line-height: 24px;
+
+}
+h5.card-title{
+    @include text-font(16px, 700, $bold-text-color);
+    text-align: center;
+    line-height: 24px;
+    text-align: left;
+    overflow: hidden;
+    height: 24px;
+}
+h6.card-title{
+    @include text-font(16px, 700, $light-text-color);
+    text-align: center;
+    line-height: 24px;
+    // width: 160px;
+    // height: 48px;
+}
+h1.text-heading-2{
+ color: $blue-color;
+ width: auto;
+ height: auto;   
+ margin: 0px;
+ 
+}
+.flex-column{
+    @include flex-3fix;
+    flex-direction: column;
+}
+h3.card-title{
+    @include text-font(24px, 700, $bold-text-color);
+    text-align: center;
+    line-height: 24px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.icon-background{
+    color: $star-color;
+}
+
+.col-border{
+    
+    border: 1px solid $blue-color;
+    background-color: $white-bgcolor;
+}
+.price-styling{
+    @include flex-3fix;
+    flex-direction: column;
+    padding: 50px 10px;
+}
+.price{
+    @include flex-3fix;
+}
+.card-price{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.price-feature{
+    display: flex;
+    flex-direction: column;
+
+}
+.price-title{
+    @include text-font(16px, 700, $blue-color!important);
+    text-align: left;
+    line-height: 24px;
+}
+.feature-item{
+    display: flex;
+}
+.check-icon{
+    padding-right: 10px;
+    color: $check-color;
+    width: 32px;
+    height: 32px;
+}
+.check-icon-false{
+    color: $check-false-color;
+}
+.form{
+    @include  flex-3fix;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    height: 50%;
+}
+.form-body{
+    @include flex-3fix;
+    flex-direction: column;
+    width: 80%;
+    background-color: $white-bgcolor;
+    padding: 40px 60px;
+}
+.input-margin{
+    margin: 10px 0px;
+}
+.col-12-height{
+    height: 140px;
+}
+// footer
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer-1{
+    display: flex;
+    flex-direction: column;
+}
+.flex-seting{
+    @include flex-3fix;
+}
+.icon{
+    margin: 0px 10px;
+    color: $blue-color;
+}
+//Mobile
+.nav-icon{
+    color: $gray-bgcolor;
+    margin: 0px 10px;
+}

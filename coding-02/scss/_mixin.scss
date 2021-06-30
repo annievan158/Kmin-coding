@@ -1,0 +1,32 @@
+@import 'variable';
+
+@mixin  flex-3fix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@mixin text-font ($font-size: 15px,$font-weight: 800, $color: $white-color){
+    font-size: $font-size;
+    color: $color;
+    font-weight: $font-weight;
+    font-family: 'Montserrat';
+    font-style: normal;
+    letter-spacing: 0.2px;
+
+}
+
+@mixin mobile {
+    @media (max-width: $mobile-width){
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media (min-width: $desktop-width){
+        @content;
+    }
+}
+
